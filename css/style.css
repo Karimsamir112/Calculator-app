@@ -1,0 +1,192 @@
+h1 {
+  font-size: 25.6px;
+  color: white;
+}
+
+h2 {
+  font-size: 9.6px;
+  color: white;
+}
+
+h2, span {
+  color: white;
+  opacity: 0.5;
+  display: inline-block;
+}
+
+body {
+  background-color: #3a4764;
+  overflow-x: hidden;
+  font-size: 32px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+}
+
+section {
+  margin-top: 150px;
+  margin: 50px auto;
+  width: 550px;
+}
+section article:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+section article:first-of-type div:last-of-type {
+  margin-top: 7px;
+}
+section article:first-of-type div:last-of-type h2 {
+  position: relative;
+  top: -13px;
+}
+section article:first-of-type div:last-of-type div {
+  display: inline-block;
+  margin-left: 5px;
+  width: 70px;
+  height: 25px;
+  border-radius: 70px;
+  background-color: #232c43;
+}
+section article:first-of-type div:last-of-type div #circle {
+  color: #d03f2f;
+  font-size: 18px;
+  position: relative;
+  top: -12px;
+  left: 2.5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0px);
+}
+section article:first-of-type div:last-of-type div #transition1 {
+  color: #d03f2f;
+  font-size: 18px;
+  position: relative;
+  top: -12px;
+  left: 2.5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(22px);
+}
+section article:first-of-type div:last-of-type div #transition2 {
+  color: #d03f2f;
+  font-size: 18px;
+  position: relative;
+  top: -12px;
+  left: 2.5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(47px);
+}
+section article:first-of-type div:last-of-type span {
+  letter-spacing: 8px;
+  font-size: 9.6px;
+  position: relative;
+  top: -40px;
+  left: -62px;
+}
+section input {
+  color: white;
+  padding-left: 30px;
+  margin-top: 10px;
+  width: 480px;
+  height: 120px;
+  background-color: #182034;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+section article:last-of-type {
+  margin-top: 20px;
+  width: 480px;
+  height: 400px;
+  background-color: #232c43;
+  border-radius: 10px;
+}
+section article:last-of-type div {
+  padding: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 20px;
+}
+section article:last-of-type div button {
+  padding-top: 4px;
+  background-color: #eae3dc;
+  width: 85px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-bottom: 5px solid #b4a597;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #444b5a;
+  transition: all 0.3s ease-in-out;
+}
+section article:last-of-type div .del {
+  background-color: #637097;
+  color: white;
+  border-bottom: 5px solid #404e72;
+}
+section article:last-of-type div:last-of-type button {
+  width: 200px;
+  height: 60px;
+}
+section article:last-of-type div:last-of-type button:first-of-type {
+  background-color: #637097;
+  color: white;
+  border-bottom: 5px solid #404e72;
+}
+section article:last-of-type div:last-of-type button:last-of-type {
+  background-color: #d03f2f;
+  color: white;
+  border-bottom: 5px solid #93261a;
+}
+section article:last-of-type button:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 850px) {
+  section {
+    margin: 50px auto;
+    width: 480px;
+  }
+  section article:first-of-type div:first-of-type {
+    position: relative;
+    left: 10%;
+  }
+  section article:first-of-type div:last-of-type {
+    margin-top: 7px;
+  }
+  section article:first-of-type div:last-of-type div {
+    display: inline-block;
+    margin-left: -5px;
+    margin-top: 20px;
+  }
+  section article:first-of-type div:last-of-type span {
+    position: relative;
+    top: -40px;
+    left: -45px;
+  }
+  section input {
+    position: relative;
+    left: 8%;
+    margin-top: 20px;
+    width: 400px;
+  }
+  section article:last-of-type {
+    position: relative;
+    left: 8%;
+    margin-top: 20px;
+    width: 400px;
+    height: 460px;
+  }
+  section article:last-of-type div button {
+    width: 75px;
+    height: 60px;
+  }
+  section article:last-of-type div:last-of-type button {
+    width: 160px;
+    height: 70px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

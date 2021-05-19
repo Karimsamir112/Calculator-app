@@ -1,0 +1,219 @@
+$size :32px;
+$transition :all 0.3s ease-in-out;
+$map: ( h1:$size * 0.8 , h2:$size * 0.3);
+	@each $elem , $SZ in $map {
+		
+		#{$elem}{
+            font-size: $SZ;
+			color:white;
+			}
+		}
+
+h2 , span{
+	color:white;
+	opacity: 0.5;
+	display: inline-block;
+}
+
+@mixin circ{
+	
+	color:hsl(6, 63%, 50%);
+	font-size: 18px;
+	position: relative;
+	top:-12px; 
+	left:2.5px;
+	cursor: pointer;
+	transition: $transition; 
+}
+body{
+	background-color: hsl(222, 26%, 31%);
+	overflow-x: hidden;
+	font-size: $size;
+	font-family: 'Spartan', sans-serif;
+	font-weight:700;
+}
+section{
+	margin-top: 150px;
+	margin:50px auto;
+	width: 550px;
+	
+	article:first-of-type{
+		display: flex;
+		justify-content: space-between;
+		
+		div:last-of-type{
+			margin-top: 7px;
+			h2{
+				position: relative;
+				top:-13px;
+			}
+			div{
+				display: inline-block;
+				margin-left: 5px;
+				width: 70px;
+				height: 25px;
+				border-radius: 70px;
+				background-color:hsl(223, 31%, 20%);
+				
+				#circle{
+					@include circ;
+					transform: translateX(0px);
+				}
+				
+				#transition1{
+					@include circ;
+                     transform: translateX(22px);
+                           }
+				#transition2{
+					@include circ;
+                     transform: translateX(47px);
+                           }
+	
+			}
+			span{
+					letter-spacing: 8px;
+					font-size: $size * 0.3;
+					position: relative;
+					top:-40px;
+				    left: -62px;
+				}
+		}
+	}
+	
+	input{
+		color:white;
+		padding-left: 30px;
+		margin-top: 10px;
+		width: 480px;
+		height: 120px;
+		background-color: hsl(224, 36%, 15%);
+		border:1px solid transparent;
+		border-radius: 10px;
+	}
+	
+	article:last-of-type{
+		margin-top: 20px;
+		width: 480px;
+		height: 400px;
+		background-color: hsl(223, 31%, 20%);
+		border-radius: 10px;
+		
+		div{
+			padding: 10px;
+			padding-top: 10px;
+			display: flex;
+			justify-content: space-around;
+			position: relative;
+			top:20px;
+			button{
+				padding-top: 4px;
+				background-color: hsl(30, 25%, 89%);
+				width: 85px;
+				height: 50px;
+				border:1px solid transparent;
+				border-bottom: 5px solid hsl(28, 16%, 65%);
+				border-radius: 10px;
+				text-align: center;
+				font-size: 18px;
+				color:hsl(221, 14%, 31%);
+				transition: $transition;
+			}
+			
+			.del{
+				background-color: hsl(225, 21%, 49%);
+				color:white;
+				border-bottom: 5px solid hsl(224, 28%, 35%);
+			}
+		}
+		div:last-of-type{
+			button{
+				width: 200px;
+				height: 60px;
+			}
+			button:first-of-type{
+				background-color: hsl(225, 21%, 49%);
+				color:white;
+				border-bottom: 5px solid hsl(224, 28%, 35%);
+			}
+			button:last-of-type{
+				background-color: hsl(6, 63%, 50%);
+				color:white;
+				border-bottom: 5px solid hsl(6, 70%, 34%);
+			}
+				
+				
+		}
+		button:hover{
+			opacity: 0.6;
+		}
+	}
+}
+@media (max-width:850px) {
+	
+	section{
+	margin:50px auto;
+	width: 480px; 
+	
+	article:first-of-type{
+		
+		div:first-of-type{
+			position: relative;
+			left:10%;
+		}
+		div:last-of-type{
+			margin-top: 7px;
+			
+			div{
+				display: inline-block;
+				margin-left: -5px;
+				margin-top: 20px;
+			
+				
+			}
+			span{
+				
+					position: relative;
+					top:-40px;
+				    left: -45px;
+				}
+		}
+	}
+	
+	input{
+	
+		position: relative;
+			left:8%;
+		margin-top: 20px; 
+		width: 400px;
+	
+	}
+	
+	article:last-of-type{
+		position: relative;
+			left:8%;
+		margin-top: 20px;
+		width: 400px;
+		height: 460px;
+		
+		div{
+		
+			button{
+				
+				width: 75px;
+				height: 60px;
+				
+			}
+			
+	
+		}
+		div:last-of-type{
+			button{
+				width: 160px;
+				height: 70px;
+			}
+		
+		}
+	
+	}
+}
+}

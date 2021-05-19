@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Calculator app</title>
+	
+	
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	
+	
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+		
+<!-- soret el mawke3 -->
+	
+	<!-- <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon"> -->
+	
+	
+	<!-- for fonts -->
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+	
+	
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script type="text/javascript" src="script/myscript.js"></script>
+	
+	
+
+	</head>
+
+<body>
+	<section>
+	
+	<article>
+		<div> <h1 class="calc">Calc</h1> </div>
+		<div> <h2 class="theme">THEME</h2>   <div class="toggle"><i id="circle"  class="fas fa-circle"></i> </div><span class="numbers">1   2    3</span>
+			
+		</div>
+		</article>
+	
+	<input id="input">
+		
+		<article class="screen">
+		<div><button class="num" onclick="insert(7);">7</button> <button class="num" onclick="insert(8);">8</button> <button class="num" onclick="insert(9);">9</button> <button onclick="back();" class="del">DEl</button></div>
+			
+		<div><button class="num" onclick="insert(4);">4</button> <button class="num" onclick="insert(5);">5</button> <button class="num" onclick="insert(6);">6</button> <button class="num" onclick="insert1();">+</button></div>
+			
+		<div><button class="num" onclick="insert(1);">1</button> <button class="num" onclick="insert(2);">2</button> <button class="num" onclick="insert(3);">3</button> <button class="num" onclick="insert2();">-</button></div>
+			
+		<div><button class="num" onclick="insert0();">.</button> <button class="num" onclick="insert(0);">0</button> <button class="num" onclick="insert4();">/</button> <button class="num" onclick="insert3();">x</button></div>
+		<div><button class="rs" onclick="clean();">RESET</button>  <button class="eq" onclick="equal();">=</button></div>
+		
+		</article>
+	</section>
+
+		<script src="https://kit.fontawesome.com/682febeeb9.js" crossorigin="anonymous"></script> 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+    
+	</body>
+</html>
